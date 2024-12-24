@@ -39,7 +39,7 @@
             <label for="cep" class="form-label">CEP</label>
             <input formControlName="cep" (blur)="consultaCEP($event)" type="tel" class="form-control" id="nome" aria-describedby="CEP" placeholder="Informe seu CEP" cep>
             <span class="helpText" *ngIf="formulario.get('cep')?.touched && formulario.get('cep')?.errors?.['required']">Campo obrigatório</span>
-            <span class="helpText" *ngIf="formulario.get('cep')?.touched && formulario.get('cep')?.errors?.['pattern']">CEP inválido</span>
+            <!-- <span class="helpText" *ngIf="formulario.get('cep')?.touched && formulario.get('cep')?.errors?.['pattern']">CEP inválido</span> -->
         </div>
         <div class="mb-3">
             <label for="logradouro" class="form-label">Logradouro</label>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="d-grid gap-2">
-            <button (click)="iniciaAtendimento()" type="submit" class="btn btn-primary mt-5">Iniciar atendimento</button>
+            <button [disabled]="formulario.invalid" (click)="iniciaAtendimento()" type="submit" class="btn btn-primary mt-5">Iniciar atendimento</button>
         </div>
     </form>
 </section>

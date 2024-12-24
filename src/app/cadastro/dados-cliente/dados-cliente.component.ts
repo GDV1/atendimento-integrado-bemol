@@ -24,8 +24,8 @@ export class DadosClienteComponent implements OnInit {
       nome: ['', Validators.compose([Validators.required, Validators.minLength(3)])],
       email: ['', Validators.compose([Validators.required, Validators.email])],
       dataNascimento: [null, Validators.compose([Validators.required])],
-      telefone: ['', Validators.compose([Validators.required, Validators.pattern('^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$')])],
-      cep: ['', Validators.compose([Validators.required, Validators.pattern('\d{5}\d{3}')])],
+      telefone: ['', Validators.compose([Validators.required])],
+      cep: ['', Validators.compose([Validators.required])],
       logradouro: ['', Validators.compose([Validators.required])],
       numero: [null, Validators.compose([Validators.required])],
       complemento: [''],
@@ -63,5 +63,7 @@ export class DadosClienteComponent implements OnInit {
   }
 
   // Implementar ngx-mask para CEP e telefone
-
+  // Responder perguntas
+  // Implementar automação de deploy (fazer deploy no firebase hosting)
+  // Documentar setup de execução do projeto
 }
