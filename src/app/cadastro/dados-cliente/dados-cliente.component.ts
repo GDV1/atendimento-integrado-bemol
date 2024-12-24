@@ -66,4 +66,5 @@ export class DadosClienteComponent implements OnInit {
   // Responder perguntas
   // Implementar automação de deploy (fazer deploy no firebase hosting)
   // Documentar setup de execução do projeto
+  // Testes unitários (Jest ou Jasmine)
 }
