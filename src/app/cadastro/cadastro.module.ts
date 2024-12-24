@@ -3,15 +3,19 @@ import { CommonModule } from '@angular/common';
 import { DadosClienteComponent } from './dados-cliente/dados-cliente.component';
 import { CadastroRoutingModule } from './cadastro-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SucessoCadastroComponent } from './sucesso-cadastro/sucesso-cadastro.component';
 
 @NgModule({
   declarations: [
-    DadosClienteComponent
+    DadosClienteComponent,
+    SucessoCadastroComponent
   ],
   imports: [
     CommonModule,
     CadastroRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class CadastroModule { }

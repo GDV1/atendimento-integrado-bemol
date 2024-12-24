@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CadastroModule } from './cadastro/cadastro.module';
+import { TelefonePipe } from './shared/pipes/telefone.pipe';
 
 const modules = [
   CadastroModule,
@@ -13,7 +14,7 @@ const modules = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

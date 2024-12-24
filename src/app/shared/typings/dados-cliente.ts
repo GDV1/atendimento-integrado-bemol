@@ -12,7 +12,6 @@ export interface Endereco {
     numero: number,
     complemento: string,
     bairro: string,
-    cidade: string,
     uf: string,
     unidade: string,
     localidade: string,
