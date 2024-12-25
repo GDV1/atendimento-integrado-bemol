@@ -1,0 +1,35 @@
+Questões
+
+1. A solução deve ser disponibilizada em Cloud ou On-premise? 
+
+Para o problema apresentado, o ideal seria uma solução em cloud devido a necessidade de escalabilidade para atender
+um grande número de clientes/requisições em curtos espaços de tempo. 
+
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa 
+solução, responda qual ferramenta acreditas ser apropriada para o controle de tarefas 
+da equipe, a ferramenta é ágil? 
+
+Considerando uma equipe pequena, madura e autonoma, com apenas 4 pessoas, uma ferramenta mais simples, 
+como o Trello, pode ser suficiente para o controle das tarefas. Para uma equipe com 4 pessoas desenvolvedoras
+e mais integrantes responsáveis pela gestão (SM, PO, Tech Lead, ...) algumas ferramentas interessantes são Jira e Confluence
+para controle de tarefas e documentação dos projetos. Ambas as ferramentas são ágeis e dão mais autonomia ao time.
+
+
+3. Você se sente capaz de liderar esta equipe? Por quê? 
+
+Acredito que ainda não consigo liderar um time completo por ainda não ter conhecimentos em arquitetura de software, por exemplo. Nos últimos
+anos tenho focado apenas no Frontend, então liderar um time completo acredito não conseguir ainda, mas auxiliar colegas em dúvidas de Frontend
+e em tarefas não só consigo como já fiz. 
+
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
+
+Acredito que seria interessante implementar um mecanismo de notificação/mensageria para que o cliente seja avisado quando o seu chamado ou 
+mensagem for respondida.  
+
+
+5. Acha válido esse desafio para o processo que está participando?
+
+Para esse processo seletivo de Engenheiro de Frontend acredito que o desafio poderia ser melhor direcionado para as tecnologias que foram pedidas
+na descrição da vaga. Um desafio que avaliasse melhor, de acordo com o nível (Júnior, Pleno, Senior), o que o candidato sabe de fato fazer.
