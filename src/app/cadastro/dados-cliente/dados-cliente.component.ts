@@ -67,7 +67,7 @@ export class DadosClienteComponent implements OnInit {
     input.value = this.phoneMask(input.value);
   }
   
-  phoneMask = (value: string) => {
+  phoneMask(value: string) {
     if (!value) return ""
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")
@@ -75,12 +75,12 @@ export class DadosClienteComponent implements OnInit {
     return value
   }
 
-  handleZipCode = (event: any) => {
+  handleZipCode(event: any) {
     let input = event.target
     input.value = this.zipCodeMask(input.value)
   }
   
-  zipCodeMask = (value: string) => {
+  zipCodeMask (value: string) {
     if (!value) return ""
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{5})(\d)/,'$1-$2')
