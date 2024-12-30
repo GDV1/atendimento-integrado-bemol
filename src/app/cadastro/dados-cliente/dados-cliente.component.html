@@ -27,7 +27,7 @@
 
             <div class="col-md">
                 <label for="telefone" class="form-label">Telefone</label>
-                <input formControlName="telefone" type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999">
+                <input formControlName="telefone" type="tel" (keyup)="handlePhone($event)" class="form-control" id="telefone" placeholder="(99) 99999-9999">
                 <span class="helpText" *ngIf="formulario.get('telefone')?.touched && formulario.get('telefone')?.errors?.['required']">Campo obrigatório</span>
                 <span class="helpText" *ngIf="formulario.get('telefone')?.touched && formulario.get('telefone')?.errors?.['pattern']">Telefone inválido</span>
             </div>
@@ -37,7 +37,7 @@
         <h2>Endereço</h2>
         <div class="mb-3">
             <label for="cep" class="form-label">CEP</label>
-            <input formControlName="cep" (blur)="consultaCEP($event)" type="tel" class="form-control" id="nome" aria-describedby="CEP" placeholder="Informe seu CEP" cep>
+            <input formControlName="cep" (blur)="consultaCEP($event)" (keyup)="handleZipCode($event)" type="tel" class="form-control" id="nome" aria-describedby="CEP" placeholder="Informe seu CEP" cep>
             <span class="helpText" *ngIf="formulario.get('cep')?.touched && formulario.get('cep')?.errors?.['required']">Campo obrigatório</span>
             <!-- <span class="helpText" *ngIf="formulario.get('cep')?.touched && formulario.get('cep')?.errors?.['pattern']">CEP inválido</span> -->
         </div>
